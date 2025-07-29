@@ -20,6 +20,4 @@ scipy
 pydub
 
 pillow
-
 Flask
-
