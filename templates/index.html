@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SmartCart</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/recorderjs/0.1.0/recorder.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SmartCart</h1>
+        <div id="chat-box"></div>
+
+        <div class="input-area">
+            <textarea id="user-input" placeholder="Type your question here..."></textarea>
+
+            <div class="preview-area"
+                style="display:none; border: 1px solid #ccc; padding: 8px; border-radius: 6px; margin-bottom: 10px; max-width: 100%; background:#f0f0f0; display:flex; flex-direction: column; gap: 5px;">
+                <div class="preview-message" style="font-size: 14px; color: #333;"></div>
+                <img id="preview-image" style="max-width: 150px; border-radius: 8px; align-self: start;" />
+            </div>
+
+            <div class="buttons">
+                <label class="file-upload icon-button">
+                    <i class="fas fa-camera"></i>
+                    <input type="file" id="image-upload" accept="image/*" />
+                </label>
+
+                <button id="record-btn" class="icon-button">
+                    <i class="fas fa-microphone"></i>
+                </button>
+
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+
+</html>
